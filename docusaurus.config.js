@@ -89,12 +89,8 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'More',
+            title: 'Cubecoders',
             items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/ssfdre38/',
-              },
               {
                 label: 'Cubecoders AMP',
                 href: 'https://cubecoders.com/AMP',
