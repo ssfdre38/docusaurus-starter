@@ -6,8 +6,10 @@ sidebar_position: 10
 
 Welcome to the Cubecoders FAQ. This will hopefully help you out with the most asked questions and problems that has been asked on the Discourse and on Discord. This post is made by a community member (ssfdre38).
 
-:::Note
+:::note
+
 Please note that is a Work in Progress FAQ for support and more will be added later.
+
 :::
 
 ## Help, I can't update my AMP Server. It's Stuck on version x.x.x.x
