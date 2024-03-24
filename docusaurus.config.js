@@ -89,37 +89,23 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Docs',
-                to: '/docs/category/amp',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/cubecoders',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/ssfdre38/',
+              },
+              {
+                label: 'Cubecoders AMP',
+                href: 'https://cubecoders.com/AMP',
+              },
+              {
+                label: 'Cubecoders discourse',
+                href: 'https://discourse.cubecoders.com/',
+              },
+              {
+                label: 'Cubecoders discord',
+                href: 'https://discord.gg/cubecoders',
               },
             ],
           },
