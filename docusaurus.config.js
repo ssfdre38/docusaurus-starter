@@ -63,7 +63,7 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
-        }},
+        },
         items: [
           {
             type: 'docSidebar',
@@ -77,23 +77,8 @@ const config = {
             position: 'right',
           },
         ],
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Daniel Elliott',
-            items: [
-              {
-                label: 'Main Site',
-                href: 'https://danielelliott.info',
-              },
-              {
-                label: 'Github',
-                href: 'https://github.com/ssfdre38',
-              },
-            ],
-          },
-        ],
+      },
+      
       footer: {
         style: 'dark',
         links: [
