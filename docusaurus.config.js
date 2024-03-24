@@ -96,11 +96,11 @@ const config = {
                 href: 'https://cubecoders.com/AMP',
               },
               {
-                label: 'Cubecoders discourse',
+                label: 'Cubecoders Discourse',
                 href: 'https://discourse.cubecoders.com/',
               },
               {
-                label: 'Cubecoders discord',
+                label: 'Cubecoders Discord',
                 href: 'https://discord.gg/cubecoders',
               },
             ],
