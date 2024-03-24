@@ -4,7 +4,7 @@ sidebar_position: 50
 
 # How To Setup RedBot on AMP
 
-:::tip
+:::info
 
 This is not officially supported by Cubecoders support and AMP so please send any issues to [My Github](https://github.com/ssfdre38/AMPTemplates/issues)
 
