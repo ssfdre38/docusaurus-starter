@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ssfdre38/docusaurus-starter/tree/main/docs',
+            'https://github.com/ssfdre38/docusaurus-starter/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
