@@ -6,6 +6,10 @@ sidebar_position: 10
 
 Welcome to the Cubecoders FAQ. This will hopefully help you out with the most asked questions and problems that has been asked on the Discourse and on Discord. This post is made by a community member (ssfdre38).
 
+```note
+Please note that is a Work in Progress FAQ for support and more will be added later.
+```
+
 ## Help, I can't update my AMP Server. It's Stuck on version x.x.x.x
 
 This is one of the most common questions we get asked on the support side all the time. Your AMP install is stuck on an older version of AMP and you can not update it. Don't worry this secion will be here to help you out.
