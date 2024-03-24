@@ -10,6 +10,10 @@ This is not officially supported by Cubecoders support and AMP so please send an
 
 :::
 
+:::info
+This is only for Linux versions of AMP right now and will be working on setting it up for Windows soon.
+:::
+
 ## Configuring Amp to see RedBot
 
 First thing you need to do is to add my GitHub Repo to your panel.
@@ -28,7 +32,7 @@ ssfdre38 / RedBot - A Discord Bot
 ```
 
 :::info
-This is built for Linux only but can run on Windows using Docker. Please follow [How To Install Docker to AMP](https://discourse.cubecoders.com/t/configuring-amp-to-use-docker-for-instances/1957) on how to setup Docker for both Linux and Windows.
+This is built for Linux only Using Docker. Please follow [How To Install Docker to AMP](https://discourse.cubecoders.com/t/configuring-amp-to-use-docker-for-instances/1957) on how to setup Docker for Linux.
 
 This is using a custom Docker container for AMP so please use the container it comes with.
 ```bash
