@@ -61,3 +61,10 @@ And then we need to update your instances with this command,
 ```bash
 ampinstmgr upgradeall
 ```
+
+## Help, My Windows AMP Install isn't working and is giving me a blank login screen.
+
+For this problem, it's an easy fix to do.
+What you need to do is go to the Services.msc panel on windows by eather pressing WinKey+R and typing services.msc or in your Start Menu Search Bar and start typing Services.
+Once that is open, you will look for `AMP - ADS01` and right click on it and go to properties and change the Startup from `Automatic` to `Automatic (Delay Start)` and Then you will need to stop it and then start it back up.
+![Screenshot](./img/screenshot.137.png)
