@@ -25,5 +25,4 @@ There you will go back to the Instances page on the main part of your AMP Panel 
 
 ```bash
 ssfdre38 / RedBot - A Discord Bot
-
 ```
