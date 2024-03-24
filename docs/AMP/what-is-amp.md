@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-## What is AMP?
+# What is AMP?
 
 AMP (Application Managment Panel) is built by [CubeCoders](https://cubecoders.com/AMP) as the predecessor of McMyAdmin after the owner saw that it can do and be more.
 It can host more then just [Minecraft](https://minecraft.net/) and is built to be as lightweight as possible.
