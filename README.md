@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3db68b89-b405-42ff-9cf9-945581485d81/deploy-status)](https://app.netlify.com/sites/danielelliott/deploys)
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
