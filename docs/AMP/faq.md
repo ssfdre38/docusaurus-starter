@@ -67,4 +67,4 @@ ampinstmgr upgradeall
 For this problem, it's an easy fix to do.
 What you need to do is go to the Services.msc panel on windows by eather pressing WinKey+R and typing services.msc or in your Start Menu Search Bar and start typing Services.
 Once that is open, you will look for `AMP - ADS01` and right click on it and go to properties and change the Startup from `Automatic` to `Automatic (Delay Start)` and Then you will need to stop it and then start it back up.
-![Screenshot|402x500, 75%](./img/screenshot.138.png)
+![Screenshot.138|402x500, 75%](./img/screenshot.138.png)
