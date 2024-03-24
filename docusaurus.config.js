@@ -82,6 +82,23 @@ const config = {
         style: 'dark',
         links: [
           {
+            title: 'Daniel Elliott',
+            items: [
+              {
+                label: 'Main Site',
+                href: 'https://danielelliott.info',
+              },
+              {
+                label: 'Github',
+                href: 'https://github.com/ssfdre38',
+              },
+            ],
+          },
+        ],
+      footer: {
+        style: 'dark',
+        links: [
+          {
             title: 'Cubecoders',
             items: [
               {
