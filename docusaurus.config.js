@@ -72,7 +72,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/ssfdre38/',
+            href: 'https://github.com/ssfdre38/docusaurus-starter',
             label: 'GitHub',
             position: 'right',
           },
