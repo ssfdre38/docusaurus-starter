@@ -76,9 +76,30 @@ Once that is open, you will look for `AMP - ADS01` and right click on it and go 
 
 ## I Got X License and want to switch it to Y License that I just purchase.
 
-When you get the key there will be 2 things to do. First on the panel, go to `Configuration > New Instance Defaults` and add the new key and press reactivate all button. Second thing is on the command side of things. For Linux it's `sudo su -l amp` to go to the amp user then you will do `ampinstmgr stop ADS01` and then `ampinstmgr reactivate ADS01 license` but replace where it says license with your new one and then `ampinstmgr start ADS01` and that will be the full process for Linux. 
+When you get the key there will be 2 things to do. First on the panel, go to `Configuration > New Instance Defaults` and add the new key and press reactivate all button. Second thing is on the command side of things.
+For Linux it's,
+```bash
+sudo su -l amp
+```
+to go to the amp user then you will do
+```bash
+ampinstmgr stop ADS01
+```
+and then,
+```bash
+ampinstmgr reactivate ADS01 license
+```
+but replace where it says license with your new one and then,
+```bash
+ampinstmgr start ADS01
+```
+and that will be the full process for Linux.
 
-For windows, you will go to services.msc and stop `AMP - ADS01` and then in cmd `ampinstmgr reactivate ADS01 license` and go back to services.msc and start `AMP - ADS01` and you should be good to go
+For windows, you will go to services.msc and stop `AMP - ADS01` and then in cmd
+```bash
+ampinstmgr reactivate ADS01 license
+```
+and go back to services.msc and start`AMP - ADS01` and you should be good to go.
 
 ## How do I install Docker?
 
