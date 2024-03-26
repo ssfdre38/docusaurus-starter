@@ -61,7 +61,7 @@ const config = {
       navbar: {
         title: 'Daniel Elliott Docs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Daniel Elliott Docs',
           src: 'img/logo.svg',
         },
         items: [
