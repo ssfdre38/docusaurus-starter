@@ -208,7 +208,7 @@ These settings don't affect the modules behaviour and are used purely for inform
 Configuration manifests allows AMP to automatically generate an appropriate user interface for an applications various settings. This takes the form of the `configmanifest.json` file in the instances datastore directory. You can find examples of these at the [AMPTemplates](https://github.com/CubeCoders/AMPTemplates) repository.
 
 They consist of an array of setting objects. Below is a fictional example that covers all of the supported setting types: (Note: Comments are not valid in JSON, and exist in this example purely to document. If you copy any of the samples below you should remove any comments.
-`
+```tts
 	[
 		//Plain text field example:
 		{
@@ -280,8 +280,8 @@ They consist of an array of setting objects. Below is a fictional example that c
 			"IncludeInCommandLine": true,
 			"DefaultValue": "-flag"
 		},
-	]
-`
+	];
+```
 
 
 |Settings Object|Description|
@@ -324,7 +324,7 @@ Meta Manifests allow the generic module to produce configuration files in variou
 
 This data is stored in `metaconfig.json` alongside `configmanifest.json`.
 
-`
+```tts
 	[
 		{
 			"ConfigFile": "ConfigFile.json",
@@ -369,7 +369,7 @@ This data is stored in `metaconfig.json` alongside `configmanifest.json`.
 			]
 		}
 	]
-`
+```
 ***
 
 # Using Proton to run Windows-only servers on Linux
