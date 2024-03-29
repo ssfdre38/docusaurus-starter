@@ -44,7 +44,7 @@ That's All you need to do on linux to update your AMP Panel on Linux.
 
 ## Update AMP on Windows
 
-For Windows Based Systems (10/11 and Server 2019-2022), It's a little different.
+For Windows Based Systems (10/11 and Server 2016-2022), It's a little different.
 
 First thing you will need to do is to go to the [Cubecoders AMP Download](https://cubecoders.com/AMP/Install) page and redownload the [AMPSetup.msi](https://downloads.cubecoders.com/AMP/Mainline/AMPSetup.msi) Installer and install it on top of your current AMP install.
 
