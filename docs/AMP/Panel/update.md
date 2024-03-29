@@ -14,9 +14,21 @@ For Linux based systems, it's very easy to update AMP.
 
 First you will need to update your system with your Package Manager.
 
-```bash apt
-update
+Debian Based Distros
+```bash
+sudo apt update && sudo apt upgrade -y
 ```
+
+Red Hat/Fedora Based Distros
+```bash
+sudo yum update
+```
+
+Arch Based Distros
+```bash
+sudo pacman -Syu
+```
+
 Then you will need to go to the amp user with this command
 
 ```bash
