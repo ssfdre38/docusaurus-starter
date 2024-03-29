@@ -135,7 +135,7 @@ A single-stage update step that downloads App ID 896660 from Steam:
 
 A multi-stage update that downloads App ID 896660 from Steam, and then downloads an extra file from the latest GitHub release for a mod - fetching a different file for each platform (WindowsServer.zip or UnixServer.zip) which get extracted once downloaded.
 
-    App.UpdateSources=[{"UpdateStageName": "SteamCMD Download","UpdateSourcePlatform": "All", "UpdateSource": "SteamCMD", "UpdateSourceData": "896660"},{"UpdateStageName": "Fetch ValheimPlus from Github","UpdateSourcePlatform": "Windows", "UpdateSource": "GithubRelease", "UpdateSourceArgs": "valheimPlus/ValheimPlus", "UpdateSourceData": "WindowsServer.zip", "UnzipUpdateSource": true, "OverwriteExistingFiles": true},{"UpdateSourcePlatform": "Linux", "UpdateSource": "GithubRelease", "UpdateSourceArgs": "valheimPlus/ValheimPlus", "UpdateSourceData": "UnixServer.zip", "UnzipUpdateSource": true, "OverwriteExistingFiles": true}]
+   ` App.UpdateSources=[{"UpdateStageName": "SteamCMD Download","UpdateSourcePlatform": "All", "UpdateSource": "SteamCMD", "UpdateSourceData": "896660"},{"UpdateStageName": "Fetch ValheimPlus from Github","UpdateSourcePlatform": "Windows", "UpdateSource": "GithubRelease", "UpdateSourceArgs": "valheimPlus/ValheimPlus", "UpdateSourceData": "WindowsServer.zip", "UnzipUpdateSource": true, "OverwriteExistingFiles": true},{"UpdateSourcePlatform": "Linux", "UpdateSource": "GithubRelease", "UpdateSourceArgs": "valheimPlus/ValheimPlus", "UpdateSourceData": "UnixServer.zip", "UnzipUpdateSource": true, "OverwriteExistingFiles": true}]`
 
 With the JSON pretty-printed, the data is as follows:
 
