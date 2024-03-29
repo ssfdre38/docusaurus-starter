@@ -14,6 +14,10 @@ This is not officially supported by Cubecoders support and AMP so please send an
 This is only for Linux versions of AMP right now and will be working on setting it up for Windows soon.
 :::
 
+:::info
+The Official way is done with the Python App Runner on AMP and you can follow [The Offical Python App Runner Guide](https://discourse.cubecoders.com/t/python-app-runner-guide/7420#h-2-red-discord-bot-5) on how to do it.
+:::
+
 ## Configuring Amp to see RedBot
 
 First thing you need to do is to add my GitHub Repo to your panel.
