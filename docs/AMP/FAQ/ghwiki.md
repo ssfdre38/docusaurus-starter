@@ -131,7 +131,7 @@ The update sources is a JSON object array defining a set of steps that AMP will 
 
 A single-stage update step that downloads App ID 896660 from Steam:
 
-    App.UpdateSources=[{"UpdateStageName": "SteamCMD Download","UpdateSourcePlatform": "All", "UpdateSource": "SteamCMD", "UpdateSourceData": "896660"}]
+    `App.UpdateSources=[{"UpdateStageName": "SteamCMD Download","UpdateSourcePlatform": "All", "UpdateSource": "SteamCMD", "UpdateSourceData": "896660"}]`
 
 A multi-stage update that downloads App ID 896660 from Steam, and then downloads an extra file from the latest GitHub release for a mod - fetching a different file for each platform (WindowsServer.zip or UnixServer.zip) which get extracted once downloaded.
 
