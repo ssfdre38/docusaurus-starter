@@ -277,10 +277,10 @@ We then adjust `App.EnvironmentVariables` to add the `STEAM_COMPAT_DATA_PATH` an
 
 If the application is downloaded using SteamCMD, then you need to add the `"ForceDownloadPlatform": "Windows"` flag to the existing download stage to force SteamCMD to download the Windows Version. E.g.
 
-    {"UpdateStageName": "SteamCMD Download","UpdateSourcePlatform": "All", "UpdateSource": "SteamCMD", "UpdateSourceData": "728470", "ForceDownloadPlatform": "Windows"}
+    `{"UpdateStageName": "SteamCMD Download","UpdateSourcePlatform": "All", "UpdateSource": "SteamCMD", "UpdateSourceData": "728470", "ForceDownloadPlatform": "Windows"}`
 
 Then we need to add an additional platform-specific stage to download Proton using the same AppID as before:
 
-    {"UpdateStageName": "Proton Compatibility Layer", "UpdateSourcePlatform": "Linux", "UpdateSource": "SteamCMD", "UpdateSourceData":"1580130"}
+    `{"UpdateStageName": "Proton Compatibility Layer", "UpdateSourcePlatform": "Linux", "UpdateSource": "SteamCMD", "UpdateSourceData":"1580130"}`
 
 This should go at the end so the first update stage remains the actual game server itself.
