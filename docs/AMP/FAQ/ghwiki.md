@@ -208,80 +208,6 @@ These settings don't affect the modules behaviour and are used purely for inform
 Configuration manifests allows AMP to automatically generate an appropriate user interface for an applications various settings. This takes the form of the `configmanifest.json` file in the instances datastore directory. You can find examples of these at the [AMPTemplates](https://github.com/CubeCoders/AMPTemplates) repository.
 
 They consist of an array of setting objects. Below is a fictional example that covers all of the supported setting types: (Note: Comments are not valid in JSON, and exist in this example purely to document. If you copy any of the samples below you should remove any comments.
-```tts
-	[
-		//Plain text field example:
-		{
-			"DisplayName": "Plain text",
-			"Description": "This setting accepts arbritary text as a value.",
-			"FieldName": "SomeField",
-			"InputType": "text",
-			"Category": "Setting Category",
-			"IncludeInCommandLine": true,
-			"ParamFieldName": "somefield",
-			"Hidden": false,
-			"DefaultValue": "Some sensible default",
-		},
-		//Numeric field example:
-		{
-			"DisplayName": "Numeric",
-			"Description": "This setting only accepts numbers.",
-			"FieldName": "SomeField",
-			"InputType": "number",
-			"Category": "Setting Category",
-			"IncludeInCommandLine": true,
-			"ParamFieldName": "somenumericfield",
-			"minValue": "0",
-			"maxValue": "100",
-			"Hidden": false,
-			"DefaultValue": "5"
-		}
-		//Checkbox example:
-		{
-			"DisplayName": "Checkbox Example",
-			"Description": "Some applications need yes/no ",
-			"FieldName": "sometoggle",
-			"Category": "Setting Category",
-			"ParamFieldName": "sometoggle",
-			"InputType": "checkbox",
-			"EnumValues": {
-			  "False": "0",
-			  "True": "1"
-			},
-			"DefaultValue": "True"
-		}
-		//Drop down list example:
-		{
-			"DisplayName": "Single choice option",
-			"Description": "The user can select one of the following options",
-			"FieldName": "beverage",
-			"Category": "Dietary Options",
-			"ParamFieldName": "beverage",
-			"IncludeInCommandLine": true,
-			"InputType": "enum",
-			"EnumValues": {
-			  "0": "Water",
-			  "10": "Cola",
-			  "20": "Apple Juice",
-			  "999": "Other"
-			},
-			"DefaultValue": "10"
-		},
-		//Flag argument example
-		{
-			"DisplayName": "Flagarg",
-			"Category": "Flagargs",
-			"Description": "Sets a flag",
-			"Keywords": "",
-			"FieldName": "flag",
-			"InputType": "checkbox",
-			"IsFlagArgument": true,
-			"ParamFieldName": "flag",
-			"IncludeInCommandLine": true,
-			"DefaultValue": "-flag"
-		},
-	];
-```
 
 
 |Settings Object|Description|
@@ -324,52 +250,6 @@ Meta Manifests allow the generic module to produce configuration files in variou
 
 This data is stored in `metaconfig.json` alongside `configmanifest.json`.
 
-```tts
-	[
-		{
-			"ConfigFile": "ConfigFile.json",
-				//If AutoMap is enabled, it is required that the file alreaady exists for AMP to use as a template.
-				//AMP will then automatically map the field values based on the ParamFieldName. You can use
-				//The JPath syntax (foo.bar.baz) to use if you need to access a nested structure.
-			"AutoMap": true,
-			"Importable": true
-				//If AutoMap and Importable are enabled this will allow users to import settings from an existing config file into AMP. This setting is experimental and supports INI, KVP, JSON, and XML.
-		},
-		{
-			"ConfigFile": "ConfigFile.ini", //AMP automatically guesses the type of file based on the extension
-			"Subsections": [
-				{
-					"Heading": "Network",
-					"SettingMappings": {
-						"IP": "ServerIP",		//The key maps to the key in App.AppSettings, the value is what
-						"Port": "ServerPort"	//will be used as the setting name in the resulting ini file.
-					}
-				},
-				{
-					"Heading": "Gameplay",
-					"SettingMappings": {
-						"MaxPlayers": "MaxPlayers",
-						"EnableSomething": "SomethingIsEnabled"
-					}
-				}
-			]
-		},
-		{
-			"ConfigFile": "server.properties",	//AMP can't guess the config file type, so we tell it on the next line
-			"ConfigType": "kvp",				//Acceptable values are "auto", "ini" and "kvp"
-			"ConfigFormat": "{0}={1}",   //{0} is replaced with the setting key and {1} with the value.
-			"Subsections": [
-				{
-					"Heading": "$root",			//Ini files have multiple headings, but KVP files don't. Use $root in
-					"SettingMappings": {		//this cirucumstance and only have on set of categores.
-						"IP": "ServerIP",
-						"Port": "ServerPort"
-					}
-				}
-			]
-		}
-	]
-```
 ***
 
 # Using Proton to run Windows-only servers on Linux
