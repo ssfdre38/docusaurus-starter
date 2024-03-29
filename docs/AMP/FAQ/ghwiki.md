@@ -208,7 +208,7 @@ These settings don't affect the modules behaviour and are used purely for inform
 Configuration manifests allows AMP to automatically generate an appropriate user interface for an applications various settings. This takes the form of the `configmanifest.json` file in the instances datastore directory. You can find examples of these at the [AMPTemplates](https://github.com/CubeCoders/AMPTemplates) repository.
 
 They consist of an array of setting objects. Below is a fictional example that covers all of the supported setting types: (Note: Comments are not valid in JSON, and exist in this example purely to document. If you copy any of the samples below you should remove any comments.
-
+`
 	[
 		//Plain text field example:
 		{
@@ -228,9 +228,9 @@ They consist of an array of setting objects. Below is a fictional example that c
 			"Description": "This setting only accepts numbers.",
 			"FieldName": "SomeField",
 			"InputType": "number",
-			"Category": "Setting Category", 
-			"IncludeInCommandLine": true,	
-			"ParamFieldName": "somenumericfield",	
+			"Category": "Setting Category",
+			"IncludeInCommandLine": true,
+			"ParamFieldName": "somenumericfield",
 			"minValue": "0",
 			"maxValue": "100",
 			"Hidden": false,
@@ -281,7 +281,7 @@ They consist of an array of setting objects. Below is a fictional example that c
 			"DefaultValue": "-flag"
 		},
 	]
-
+`
 
 
 |Settings Object|Description|
@@ -324,31 +324,31 @@ Meta Manifests allow the generic module to produce configuration files in variou
 
 This data is stored in `metaconfig.json` alongside `configmanifest.json`.
 
-
+`
 	[
 		{
 			"ConfigFile": "ConfigFile.json",
 				//If AutoMap is enabled, it is required that the file alreaady exists for AMP to use as a template.
-				//AMP will then automatically map the field values based on the ParamFieldName. You can use 
+				//AMP will then automatically map the field values based on the ParamFieldName. You can use
 				//The JPath syntax (foo.bar.baz) to use if you need to access a nested structure.
 			"AutoMap": true,
 			"Importable": true
 				//If AutoMap and Importable are enabled this will allow users to import settings from an existing config file into AMP. This setting is experimental and supports INI, KVP, JSON, and XML.
 		},
 		{
-			"ConfigFile": "ConfigFile.ini", //AMP automatically guesses the type of file based on the extension	
+			"ConfigFile": "ConfigFile.ini", //AMP automatically guesses the type of file based on the extension
 			"Subsections": [
 				{
 					"Heading": "Network",
 					"SettingMappings": {
-						"IP": "ServerIP",		//The key maps to the key in App.AppSettings, the value is what 				
+						"IP": "ServerIP",		//The key maps to the key in App.AppSettings, the value is what
 						"Port": "ServerPort"	//will be used as the setting name in the resulting ini file.
 					}
 				},
 				{
 					"Heading": "Gameplay",
 					"SettingMappings": {
-						"MaxPlayers": "MaxPlayers",	
+						"MaxPlayers": "MaxPlayers",
 						"EnableSomething": "SomethingIsEnabled"
 					}
 				}
@@ -369,7 +369,7 @@ This data is stored in `metaconfig.json` alongside `configmanifest.json`.
 			]
 		}
 	]
-
+`
 ***
 
 # Using Proton to run Windows-only servers on Linux
