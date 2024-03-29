@@ -14,7 +14,7 @@ For Linux based systems, it's very easy to update AMP.
 
 First you will need to update your system with your Package Manager.
 
-```bash apt2yum
+```bash apt
 update
 ```
 Then you will need to go to the amp user with this command
