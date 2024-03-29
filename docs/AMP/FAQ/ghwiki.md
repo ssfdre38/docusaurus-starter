@@ -271,7 +271,7 @@ Then add `{{$PlatformArgs}}` to the start of your main arguments:
 
 We then adjust `App.EnvironmentVariables` to add the `STEAM_COMPAT_DATA_PATH` and  `STEAM_COMPAT_CLIENT_INSTALL_PATH` variables as follows:
 
-    App.EnvironmentVariables={"LD_LIBRARY_PATH": "./linux64:%LD_LIBRARY_PATH%", "SteamAppId": "{{$SteamAppID}}", "STEAM_COMPAT_DATA_PATH": "{{$FullRootDir}}1580130", "STEAM_COMPAT_CLIENT_INSTALL_PATH": "{{$FullRootDir}}1580130"}
+   ` App.EnvironmentVariables={"LD_LIBRARY_PATH": "./linux64:%LD_LIBRARY_PATH%", "SteamAppId": "{{$SteamAppID}}", "STEAM_COMPAT_DATA_PATH": "{{$FullRootDir}}1580130", "STEAM_COMPAT_CLIENT_INSTALL_PATH": "{{$FullRootDir}}1580130"}`
 
 ## Update Stages
 
