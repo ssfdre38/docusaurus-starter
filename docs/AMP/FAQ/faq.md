@@ -76,7 +76,7 @@ Once that is open, you will look for `AMP - ADS01` and right click on it and go 
 
 ## I Got X License and want to switch it to Y License that I just purchase.
 
-When you get the key there will be 2 things to do. First on the panel, go to `Configuration > New Instance Defaults` and add the new key and press reactivate all button. Second thing is on the command side of things.
+When you get the key there will be 2 things to do. First on the panel, go to `Configuration > Instance Deployment` and look for the tab `Deployment Default` and look for Licence Key boxand add the new key and press reactivate all button. Second thing is on the command side of things.
 For Linux it's,
 ```bash
 sudo su -l amp
@@ -107,7 +107,7 @@ For Docker post install on AMP, you will go to [Cubecoders Discourse](https://di
 
 ## How can I add someone else's Repo to my AMP?
 
-For this, you would go to `Configuration > Instance Deployment` and then you will see a box called `Configuration Repositories` and then you will press the + button and there a box will pop-up and there you would add the repo like this `CubeCoders/AMPTemplates` and if they have a different branch then you will do something like this `CubeCoders/AMPTemplates:dev`
+For this, you would go to `Configuration > Instance Deployment` and go to the tab `Instance Managment` and look for the box Configuration Repositories and then you will see a box called `Configuration Repositories` and then you will press the + button and there a box will pop-up and there you would add the repo like this `CubeCoders/AMPTemplates` and if they have a different branch then you will do something like this `CubeCoders/AMPTemplates:dev`
 
 ## How can I setup HTTPs for my AMP Panel?
 
