@@ -81,6 +81,38 @@ const config = {
       
       footer: {
         style: 'dark',
+        links: [
+          {
+            title: 'Daniel Elliott',
+            items: [
+              {
+                label: 'Main Site',
+                href: 'https://danielelliott.online',
+              },
+              {
+                label: 'Github',
+                href: 'https://github.com/ssfdre38',
+              },
+            ],
+          },
+          {
+            title: 'Cubecoders',
+            items: [
+              {
+                label: 'Cubecoders AMP',
+                href: 'https://cubecoders.com/AMP',
+              },
+              {
+                label: 'Cubecoders Discourse',
+                href: 'https://discourse.cubecoders.com/',
+              },
+              {
+                label: 'Cubecoders Discord',
+                href: 'https://discord.gg/cubecoders',
+              },
+            ],
+          },
+        ],
         copyright: `Copyright © ${new Date().getFullYear()} Daniel Elliott, Inc. Built with Docusaurus.`,
       },
       prism: {
